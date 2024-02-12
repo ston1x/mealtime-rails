@@ -89,7 +89,7 @@ GEM
     debug (1.9.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    diff-lcs (1.5.0)
+    diff-lcs (1.5.1)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -204,14 +204,14 @@ GEM
     reline (0.4.2)
       io-console (~> 0.5)
     rexml (3.2.6)
-    rspec-core (3.12.2)
-      rspec-support (~> 3.12.0)
-    rspec-expectations (3.12.3)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.12.0)
-    rspec-mocks (3.12.6)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.12.0)
+      rspec-support (~> 3.13.0)
     rspec-rails (6.1.1)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
@@ -220,7 +220,7 @@ GEM
       rspec-expectations (~> 3.12)
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
-    rspec-support (3.12.1)
+    rspec-support (3.13.0)
     rubocop (1.60.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -273,7 +273,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.3.0p0
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.5.4
