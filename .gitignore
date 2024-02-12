@@ -7,9 +7,12 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore recipes seed file
+db/seeds/recipes-en.json
+
 # Ignore all environment files (except templates).
-/.env*
-!/.env*.erb
+.env*
+!.env.sample*
 
 # Ignore all logfiles and tempfiles.
 /log/*
