@@ -66,7 +66,7 @@ curl --location --request GET 'localhost:3000/api/v1/recipes' \
         ]
 }'
 ```
-	.. I found that "Baked Chicken and Zucchini", "Skinny Pasta Bake with Ground Turkey" or "Chicken Pesto Sandwich" are really the recipes that I can technically cook (though by replacing turkey with chicken)
+.. I found that "Baked Chicken and Zucchini", "Skinny Pasta Bake with Ground Turkey" or "Chicken Pesto Sandwich" are really the recipes that I can technically cook (though by replacing turkey with chicken)
 
 ## Setup (without Docker)
 
