@@ -1,19 +1,3 @@
-## Setup (without Docker)
-
-- Make sure you have Ruby 3.3.0 or newer installed
-- It is recommended to have PostgreSQL 16.1 or newer (Alternatively, you can use docker-compose from parent repo running backend, frontend and postgresql on your machine)
-- Run `bundle`
-- `cp .env.sample .env`
-- `cp .env.sample.test .env.test`
-- Download the recipes: $`mkdir db/seeds && wget https://pennylane-interviewing-assets-20220328.s3.eu-west-1.amazonaws.com/recipes-en.json.gz && gzip -dc recipes-en.json.gz > db/seeds/recipes-en.json && rm recipes-en.json.gz`
-- Run `rails db:create db:migrate db:seed`
-- Run rails server (or make sure you are running it with docker-compose)
-- Also run the [React app](https://github.com/ston1x/mealtime-react/)
-
-## Setup with Docker
-See the parent [mealtime-platform](https://github.com/ston1x/mealtime-platform/) repo
-
-
 # mealtime-rails
 
 This is a test project that lets you search the most suitable recipes for the ingredients that you have at your disposal. This is the backend part which has an API for searching recipes based on given ingredients, using Full-Text Search of PostgreSQL.
@@ -24,7 +8,6 @@ This is a test project that lets you search the most suitable recipes for the in
 - Ranking search results by similarity to the given query (using [ts_rank](https://www.postgresql.org/docs/13/textsearch-controls.html#TEXTSEARCH-RANKING) function in PostgreSQL)
 - Ordering search results by attributes like 'ratings', 'ingredients' (amount of ingredients)
   - Ordering can be controlled by the user as well
-
 
 ## Database structure
 
@@ -84,6 +67,21 @@ curl --location --request GET 'localhost:3000/api/v1/recipes' \
 }'
 ```
 	.. I found that "Baked Chicken and Zucchini", "Skinny Pasta Bake with Ground Turkey" or "Chicken Pesto Sandwich" are really the recipes that I can technically cook (though by replacing turkey with chicken)
+
+## Setup (without Docker)
+
+- Make sure you have Ruby 3.3.0 or newer installed
+- It is recommended to have PostgreSQL 16.1 or newer (Alternatively, you can use docker-compose from parent repo running backend, frontend and postgresql on your machine)
+- Run `bundle`
+- `cp .env.sample .env`
+- `cp .env.sample.test .env.test`
+- Download the recipes: $`mkdir db/seeds && wget https://pennylane-interviewing-assets-20220328.s3.eu-west-1.amazonaws.com/recipes-en.json.gz && gzip -dc recipes-en.json.gz > db/seeds/recipes-en.json && rm recipes-en.json.gz`
+- Run `rails db:create db:migrate db:seed`
+- Run rails server (or make sure you are running it with docker-compose)
+- Also run the [React app](https://github.com/ston1x/mealtime-react/)
+
+## Setup with Docker
+See the parent [mealtime-platform](https://github.com/ston1x/mealtime-platform/) repo
 
 ## Usage
 
